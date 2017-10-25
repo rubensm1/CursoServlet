@@ -6,9 +6,11 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        Hello from Facelets
-        <br />
-        <h:link outcome="welcomePrimefaces" value="Página de boas-vindas do Primefaces" />
+        Olá minha JSF JPA Hibernate
+        <h:form>
+            <h:commandButton value="Aparecer" action="#{con.sessao()}" />
+            <h:outputText id="teste" value="id: #{con.user.idUsuario} login=#{con.user.login} senha=#{con.user.senha} email=#{con.user.email}" />
+        </h:form>
     </h:body>
 </html>
 
